@@ -82,7 +82,7 @@ def main():
             for inst in updated_instances[1:]:
                 size = len(inst)
                 updated_tags = []
-                index = search(inst, instances)
+                index = search(inst, instances, profile)
 
                 if index is None or inst[0] == "":
                     print(f"No updated tags for {inst[0]}")
